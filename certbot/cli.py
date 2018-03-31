@@ -1250,6 +1250,9 @@ def _plugins_parsing(helpful, plugins):
     helpful.add(["plugins", "certonly"], "--dns-cloudxns", action="store_true",
                 help=('Obtain certificates using a DNS TXT record (if you are '
                      'using CloudXNS for DNS).'))
+    helpful.add(["plugins", "certonly"], "--dns-transip", action="store_true",
+                help=('Obtain certificates using a DNS TXT record (if you are '
+                      'using Transip for DNS).'))
     helpful.add(["plugins", "certonly"], "--dns-digitalocean", action="store_true",
                 help=('Obtain certificates using a DNS TXT record (if you are '
                       'using DigitalOcean for DNS).'))
